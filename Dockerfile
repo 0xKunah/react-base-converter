@@ -1,7 +1,7 @@
 FROM node:18-alpine AS development
 ENV NODE_ENV development
 # Add a work directory
-WORKDIR /app
+WORKDIR /base_converter
 # Cache and Install dependencies
 COPY package.json .
 COPY package-lock.json .
